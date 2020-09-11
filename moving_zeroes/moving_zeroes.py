@@ -4,8 +4,15 @@ Returns: a List of integers
 '''
 def moving_zeroes(arr):
     # Your code here
+    mutated_arr = []
+    for i in arr:
+        if i == 0:
+            mutated_arr.append(i)
+        else:
+            mutated_arr.insert(0, i)
 
-    pass
+    return mutated_arr
+            
 
 
 if __name__ == '__main__':
